@@ -31,16 +31,16 @@
             <form id="encuesta" action="../validaenquesta.php" method="post">
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
 
                 <label for="name">Nombre completo:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" required><br><br>
 
                 <label for="puntua">Puntuación:</label><br>
-                <input id="puntua" name="puntua" type="number" min="1" max="5" step="1" value=""><br><br>
+                <input id="puntua" name="puntua" type="number" min="1" max="5" step="1" value="" required><br><br>
 
                 <label for="nota">Valoración global:</label>
-                <select id="nota" name="nota">
+                <select id="nota" name="nota" required>
                     <option value="excelent">Excelente</option>
                     <option value="notable">Notable</option>
                     <option value="buena">Buena</option>
