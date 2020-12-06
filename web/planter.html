@@ -7,83 +7,305 @@
     <meta name="generator" content="Visual Studio Code">
     <meta name="description" content="Plante del Eibar FC">
     <meta name="keywords" content="fútbol femenino eibar liga iberdrola plantilla">
+
     <title>Plantilla - SD Eibar Femenino</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/planter.css">
+
 </head>
 
 <body>
 
-    <div class="headIberdrola">
-        <header>
-            <a href="../index.html"><h1>SD Eibar Femenino </h1></a>
+    <div class="div-header">
+        <header>       
+            <!--imagen liga iberdrola-->
+            <img src="../img/header-iberdrola.png" alt="Logo de la Liga Iberdrola" width="100%">
+        
         </header>
-         <!--imagen liga iberdrola-->
-         <img src="../img/rep/iberdrola.png" alt="Logo de la Liga Iberdrola" height="300">
+    
+        <div class="header-equipo">
+        
+            <a href="../index.html" class="return-home"><h1>SD Eibar Femenino </h1></a> 
+            <!--Menú de navegación de classificacion / resultados /galeria-->
+        
+            <ul class="ul-navbar">
+            
+                <li><a href="../web/classif.html">Clasificación</a></li>
+                <li><a href="../web/resultats.html">Resultados</a></li>
+                <li><a href="../web/galeria.html">Galeria</a></li> 
+                <li><a href="../web/enquesta.html">Encuesta</a></li> 
+            
+            </ul>
+    
+        
+        </div>
+    
     </div>
 
-    <nav class="uppernav">
-        <!--Menú de navegación de classificacion / resultados /galeria-->
-        <a href="./classif.html">Clasificación</a> |
-        <a href="./resultats.html">Resultados</a> |
-        <a href="./galeria.html">Galeria</a> 
-    </nav>
     <main>
-        <h2>Plantilla</h2>
-        <!--tabla con la plantilla-->
-            <!--porteria + 2 rows - col 4-->
-            <!--defensa + 3 rows - col 4-->
-            <!--centrocampo + 3 - col 4 rows-->
-            <!--delantera + 3  - col 4 rows-->
-     <table class="plante">
-         <th>Portería</th>
-         <tr>
-             <td><img src="../img/plante/noelia_portera.jpg" alt="Noelia portera número 1"></td>
-             <td><img src="../img/plante/malena_porteda.jpg" alt="Malena portera número 13"></td>
-             <td><img src="../img/plante/eider_portera.jpg" alt="Eider Egaña portera número 23"></td>
-            </tr>
-         <th>Defensa</th>
-         <tr>
-            <td><img src="../img/plante/puyi_defensa.jpg" alt="Puyi central número 2"></td>
-            <td><img src="../img/plante/no_player.png" alt="Queralt defensa número 3"></td>
-            <td><img src="../img/plante/napo_defensa.jpg" alt="Napo defensa número 4"></td>
-            <td><img src="../img/plante/esti_central.jpg" alt="Esti Aizpurua central número 5"></td>
-        </tr>
-         <tr>
-            <td><img src="../img/plante/ruth_latizq.jpg" alt="Ruth lateral izquierdo número 10"></td>
-            <td><img src="../img/plante/carla_latder.jpg" alt="Carla lateral derecho número 11"></td>
-            <td><img src="../img/plante/nerea_def.jpg" alt="Nerea defensa número 15"></td>
-            <td><img src="../img/plante/jujuba_defensa.jpg" alt="Jujuba central número 20"></td>
-         </tr>
-         <tr>
-            <td><img src="../img/plante/uxue_latizq.jpg" alt="Uxue lateral izquierdo número 27"></td>
-            <td><img src="../img/plante/marta_defensa.jpg" alt="Marta defensa número 28"></td>
-            <td><img src="../img/plante/no_player.png" alt="Noko defensa número 29"></td>
-         </tr>
-         <th>Centrocampista</th>
-         <tr>
-            <td><img src="../img/plante/mllompart_mediocentro.jpg" alt="Llompart mediocentro número 6"></td>
-            <td><img src="../img/plante/arene_mediocentro.jpg" alt="Arene mediocentro número 7"></td>
-            <td><img src="../img/plante/aida_mediocentro.jpg" alt="Aida mediocentro número 8"></td>
-            <td><img src="../img/plante/honoka_centrocamp.jpg" alt="Honoka centrocampista número 14"></td>
-         </tr>
-         <tr>
-            <td><img src="../img/plante/mar_centrocamp.jpg" alt="Mar centrocampista número 16"></td>
-            <td><img src="../img/plante/sheila_mediocentr.jpg" alt="Sheila mediocentro número 22"></td>
-            <td><img src="../img/plante/malen_centrocamp.jpg" alt="Malen centrocampista número 31"></td>
-         </tr>
-         <th>Delantera</th>
-         <tr>
-            <td><img src="../img/plante/miriam_delantera.jpg" alt="Miriam delantera número 9"></td>
-            <td><img src="../img/plante/charity_delantera.jpg" alt="Charity delantera número 12"></td>
-            <td><img src="../img/plante/kgatlana_delantera.jpg" alt="Kgatlana delantera número 18"></td>
-            <td><img src="../img/plante/arola_latder.jpg" alt="Arola lateral derecho número 19"></td>
-        </tr>
-         <tr>
-            <td><img src="../img/plante/sara_delantera.jpg" alt="Sara delantera número 21"></td>
-            <td><img src="../img/plante/ane_delantera.jpg" alt="Ane delantera número 24"></td>
-            <td><img src="../img/plante/nahia_delantera.jpg" alt="Nahia delantera número 26"></td>
-            <td><img src="../img/plante/irati_delantera.jpg" alt="Irati delantera número 29"></td>
-        </tr>
-     </table>
+
+        <div class="div-content">
+            <h2>Plantilla</h2>
+            
+
+            <table class="plante-table" id="plante">
+                <th colspan="4">Portería</th>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/noelia_portera.jpg" class="img-plante" alt="Noelia portera número 1">
+                            <div class="middle">
+                                <div class="text-img">Noelia Portera<br><br>1</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/malena_porteda.jpg" class="img-plante" alt="Malena portera número 13">
+                            <div class="middle">
+                                <div class="text-img">Malena Portera<br><br>13</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/eider_portera.jpg" class="img-plante" alt="Eider Egaña portera número 23">
+                            <div class="middle">
+                                <div class="text-img">Eider Egaña Portera<br><br>23</div>
+                            </div>
+                        </div>
+                    </td>
+                    </tr>
+                <th colspan="4">Defensa</th>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/puyi_defensa.jpg" class="img-plante" alt="Puyi central número 2">
+                            <div class="middle">
+                                <div class="text-img">Puyi Central<br><br>2</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/no_player.png" class="img-plante" alt="Queralt defensa número 3">
+                            <div class="middle">
+                                <div class="text-img">Queralt Defensa<br><br>3</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/napo_defensa.jpg" class="img-plante" alt="Napo defensa número 4">
+                            <div class="middle">
+                                <div class="text-img">Napo Defensa<br><br>4</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/esti_central.jpg" class="img-plante" alt="Esti Aizpurua central número 5">
+                            <div class="middle">
+                                <div class="text-img">Esti Aizpurua Central<br><br>5</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/ruth_latizq.jpg" class="img-plante" alt="Ruth lateral izquierdo número 10">
+                            <div class="middle">
+                                <div class="text-img">Ruth Lateral Izq<br><br>10</div>
+                            </div>
+                        </div>
+                        </td>
+                            
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/carla_latder.jpg" class="img-plante" alt="Carla lateral derecho número 11">
+                            <div class="middle">
+                                <div class="text-img">Carla Lateral Der<br><br>11</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/nerea_def.jpg" class="img-plante" alt="Nerea defensa número 15">
+                            <div class="middle">
+                                <div class="text-img">Nerea Defensa<br><br>15</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/jujuba_defensa.jpg" class="img-plante" alt="Jujuba central número 20">
+                            <div class="middle">
+                                <div class="text-img">Jujuba Central<br><br>20</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/uxue_latizq.jpg" class="img-plante" alt="Uxue lateral izquierdo número 27">
+                            <div class="middle">
+                                <div class="text-img">Uxue Lateral Izq<br><br>27</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/marta_defensa.jpg" class="img-plante" alt="Marta defensa número 28">
+                            <div class="middle">
+                                <div class="text-img">Marta Defensa<br><br>28</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/no_player.png" class="img-plante" alt="Noko defensa número 29">
+                            <div class="middle">
+                                <div class="text-img">Noko Defensa<br><br>29</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <th colspan="4">Centrocampista</th>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/mllompart_mediocentro.jpg" class="img-plante" alt="Llompart mediocentro número 6">
+                            <div class="middle">
+                                <div class="text-img">Llompart Mediocentro<br><br>6</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/arene_mediocentro.jpg" class="img-plante" alt="Arene mediocentro número 7">
+                            <div class="middle">
+                                <div class="text-img">Arene Mediocentro<br><br>7</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/aida_mediocentro.jpg" class="img-plante" alt="Aida mediocentro número 8">
+                            <div class="middle">
+                                <div class="text-img">Aida Mediocentro<br><br>8</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/honoka_centrocamp.jpg" class="img-plante" alt="Honoka centrocampista número 14">
+                            <div class="middle">
+                                <div class="text-img">Honoka Centrocampista<br><br>14</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/mar_centrocamp.jpg" class="img-plante" alt="Mar centrocampista número 16">
+                            <div class="middle">
+                                <div class="text-img">Mar Centrocampista<br><br>16</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/sheila_mediocentr.jpg" class="img-plante" alt="Sheila mediocentro número 22">
+                            <div class="middle">
+                                <div class="text-img">Sheila Mediocentro<br><br>22</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/malen_centrocamp.jpg" class="img-plante" alt="Malen centrocampista número 31">
+                            <div class="middle">
+                                <div class="text-img">Malen Centrocampista<br><br>31</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <th colspan="4">Delantera</th>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/miriam_delantera.jpg" class="img-plante" alt="Miriam delantera número 9">
+                            <div class="middle">
+                                <div class="text-img">Miriam Delantera<br><br>9</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/charity_delantera.jpg" class="img-plante" alt="Charity delantera número 12">
+                            <div class="middle">
+                                <div class="text-img">Charity Delantera<br><br>12</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/kgatlana_delantera.jpg" class="img-plante" alt="Kgatlana delantera número 18">
+                            <div class="middle">
+                                <div class="text-img">Kgatlana Delantera<br><br>18</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/arola_latder.jpg" class="img-plante" alt="Arola lateral derecho número 19">
+                            <div class="middle">
+                                <div class="text-img">Arola Lateral<br><br>19</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/sara_delantera.jpg" class="img-plante" alt="Sara delantera número 21">
+                            <div class="middle">
+                                <div class="text-img">Sara Delantera<br><br>21</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/ane_delantera.jpg" class="img-plante" alt="Ane delantera número 24">
+                            <div class="middle">
+                                <div class="text-img">Ane Delantera<br><br>24</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/nahia_delantera.jpg" class="img-plante" alt="Nahia delantera número 26">
+                            <div class="middle">
+                                <div class="text-img">Nahia Delantera<br><br>26</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container-img">
+                            <img src="../img/plante/irati_delantera.jpg" class="img-plante" alt="Irati delantera número 29">
+                            <div class="middle">
+                                <div class="text-img">Irati Delantera<br><br>29</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+    </div>
         
     </main>
 
@@ -91,24 +313,26 @@
 
 <footer>
     <!--aquí va tema copyright + info contacto + redes sociales-->
+    
     <!--esta lista tendrá que ir inline-->
     <ul class="contact"> 
-        <li>&copy; SD Eibar FC Femenino</li>
-        <li><address>Ipurua Kalea 2, 20600 Eibar (Gipuzkoa)</address></li>
-        <li>Telf. 943 201 831</li>
-        <li>Fax. 943 202 606</li>
+        <li><p class="contact-text">&copy; SD Eibar FC Femenino</p></li>
+        <li><address><p class="contact-text">Ipurua Kalea 2, 20600 Eibar (Gipuzkoa)</p></address></li>
+        <li><p class="contact-text">Telf. 943 201 831</p></li>
+        <li><p class="contact-text">Fax. 943 202 606</p></li>
         <li><a href="https://www.instagram.com/sdeibar/?hl=es" target="_blank">
-            <img src="../img/icons/instagram.png" alt="Icono instagram Eibar" height="20">
+            <img src="../img/icons/instagram.png" alt="Icono instagram Eibar" height="35">
         </a></li>
         <li><a href="https://www.facebook.com/sdeibar/" target="_blank">
-            <img src="../img/icons/facebook.png" alt="Icono facebook Eibar" height="20">
+            <img src="../img/icons/facebook.png" alt="Icono facebook Eibar" height="35">
         </a></li>
         <li><a href="https://twitter.com/SDEibar" target="_blank">
-            <img src="../img/icons/twitter.png" alt="Icono twitter Eibar" height="20">
+            <img src="../img/icons/twitter.png" alt="Icono twitter Eibar" height="35">
         </a></li>
         <li><a href="https://www.youtube.com/channel/UClHd-P6Bfkm1dlUkMdkTemg" target="_blank">
-            <img src="../img/icons/youtube.png" alt="Icono youtube Eibar" height="20">
+            <img src="../img/icons/youtube.png" alt="Icono youtube Eibar" height="35">
         </a> </li>
       </ul> 
+    
      
 </footer>

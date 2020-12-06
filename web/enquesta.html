@@ -7,57 +7,77 @@
     <meta name="generator" content="Visual Studio Code">
     <meta name="description" content="Encuesta página web del eibar FC">
     <meta name="keywords" content="fútbol femenino liga iberdrola encuesta">
+
     <title>Web Oficial del equipo de fútbol Eibar Femenino</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
 </head>
 
 <body>
-    <div class="headIberdrola">
-        <header>
-            <a href="../index.html"><h1>SD Eibar Femenino </h1></a>     
+    <div class="div-header">
+        <header>       
+            <!--imagen liga iberdrola-->
+            <img src="../img/header-iberdrola.png" alt="Logo de la Liga Iberdrola" width="100%">
+        
         </header>
-        <!--imagen liga iberdrola-->
-        <img src="../img/rep/iberdrola.png" alt="Logo de la Liga Iberdrola" height="300">
+    
+        <div class="header-equipo">
+        
+            <a href="../index.html" class="return-home"><h1>SD Eibar Femenino </h1></a> 
+            <!--Menú de navegación de classificacion / resultados /galeria-->
+        
+            <ul class="ul-navbar">
+            
+                <li><a href="../web/classif.html">Clasificación</a></li>
+                <li><a href="../web/resultats.html">Resultados</a></li>
+                <li><a href="../web/galeria.html">Galeria</a></li> 
+                <li><a href="../web/enquesta.html">Encuesta</a></li> 
+            
+            </ul>
+    
+        
+        </div>
+    
     </div>
 
-    <nav class="uppernav">
-        <!--Menú de navegación de classificacion / resultados /galeria-->
-        <a href="./web/classif.html">Clasificación</a> |
-        <a href="./web/resultats.html">Resultados</a> |
-        <a href="./web/galeria.html">Galeria</a> 
-    </nav><br><br>
     <main>
-        <!--Cuerpo principal de la página-->
-        <div id="div-form">
-            <form id="encuesta" name="encuesta" action="../validaenquesta.php" method="post">
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
+        <div class="div-content">
+            <!--Cuerpo principal de la página-->
+            <h2>Responde aquí nuestra encuesta!</h2>
+            <div id="div-form">
+                <form id="encuesta" action="../validaenquesta.php" method="post">
 
-                <label for="name">Nombre completo:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
 
-                <label for="puntua">Puntuación:</label><br>
-                <input id="puntua" name="puntua" type="number" min="1" max="5" step="1" value="" required><br><br>
+                    <label for="name">Nombre completo:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
 
-                <label for="nota">Valoración global:</label>
-                <select id="nota" name="nota" required>
-                    <option value="excelent">Excelente</option>
-                    <option value="notable">Notable</option>
-                    <option value="buena">Buena</option>
-                    <option value="regular">Regular</option>
-                    <option value="mala">Mala</option>
-                </select><br><br>
+                    <label for="puntua">Puntuación:</label><br>
+                    <input id="puntua" name="puntua" type="number" min="1" max="5" step="1" value="" required><br><br>
 
-                <label for="color">Color Global preferente:</label><br>
-                <input id="color" name="color" type="color" value="#FF4533">
-                <br><br>
+                    <label for="nota">Valoración global:</label>
+                    <select id="nota" name="nota">
+                        <option value="excelent">Excelente</option>
+                        <option value="notable">Notable</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select><br><br>
 
-                <label for="obv">Observaciones:</label><br>
-                <textarea id="obv" name="obv" rows="10" cols="100"></textarea><br><br>
+                    <label for="color">Color Global preferente:</label>
+                    <input id="inColor1" name="color1" type="color" value="#FF4533">
+                    <br><br>
 
-                <input value="Reset" type="reset">
-                <input type="submit" value="Submit">
-              </form>
+                    <label for="obv">Observaciones:</label><br>
+                    <textarea name="obv" rows="10" cols="100"></textarea><br><br>
+
+                    <input value="Reset" type="reset">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
         </div>
         
     </main>
@@ -66,24 +86,26 @@
 
 <footer>
     <!--aquí va tema copyright + info contacto + redes sociales-->
+    
     <!--esta lista tendrá que ir inline-->
     <ul class="contact"> 
-        <li>&copy; SD Eibar FC Femenino</li>
-        <li><address>Ipurua Kalea 2, 20600 Eibar (Gipuzkoa)</address></li>
-        <li>Telf. 943 201 831</li>
-        <li>Fax. 943 202 606</li>
+        <li><p class="contact-text">&copy; SD Eibar FC Femenino</p></li>
+        <li><address><p class="contact-text">Ipurua Kalea 2, 20600 Eibar (Gipuzkoa)</p></address></li>
+        <li><p class="contact-text">Telf. 943 201 831</p></li>
+        <li><p class="contact-text">Fax. 943 202 606</p></li>
         <li><a href="https://www.instagram.com/sdeibar/?hl=es" target="_blank">
-            <img src="../img/icons/instagram.png" alt="Icono instagram Eibar" height="20">
+            <img src="../img/icons/instagram.png" alt="Icono instagram Eibar" height="35">
         </a></li>
         <li><a href="https://www.facebook.com/sdeibar/" target="_blank">
-            <img src="../img/icons/facebook.png" alt="Icono facebook Eibar" height="20">
+            <img src="../img/icons/facebook.png" alt="Icono facebook Eibar" height="35">
         </a></li>
         <li><a href="https://twitter.com/SDEibar" target="_blank">
-            <img src="../img/icons/twitter.png" alt="Icono twitter Eibar" height="20">
+            <img src="../img/icons/twitter.png" alt="Icono twitter Eibar" height="35">
         </a></li>
         <li><a href="https://www.youtube.com/channel/UClHd-P6Bfkm1dlUkMdkTemg" target="_blank">
-            <img src="../img/icons/youtube.png" alt="Icono youtube Eibar" height="20">
+            <img src="../img/icons/youtube.png" alt="Icono youtube Eibar" height="35">
         </a> </li>
       </ul> 
+    
      
 </footer>
