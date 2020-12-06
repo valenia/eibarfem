@@ -48,7 +48,7 @@
 	background-color: #f5f5e8;
 	margin: 0vw 0vw 0vw 12vw;
 	width: 55%;
-	height: 85vh;
+	height: 40vw;
 	
 	float: left;
 }
@@ -67,7 +67,7 @@ aside{
 	margin: 0;
 	padding: 0;
 	width: 20%;
-	height: 85vh;
+	height: 40vw;
     float: left;
     overflow: auto;
 
