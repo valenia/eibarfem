@@ -1,0 +1,323 @@
+
+/* css Document */
+@charset "utf-8";
+
+/*Import font google*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline; 
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--------------------------RESET--------------------------------------------*/
+
+/*
+*{
+	border: 2px solid red;
+}
+*/
+
+body{
+
+	margin: 0;
+
+	background-image: url("../img/fondo_eibar.png");
+	background-repeat: no-repeat;
+  	background-position: right top;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+/*------- FONTS -------*/
+
+p, h1, h2, h3, h4, h5, h6, a, li,th,td,label{
+
+	font-family: 'Roboto Condensed','Trebuchet MS',Verdana,Helvetica,Arial, sans-serif;
+}
+
+/*------- HEADER -------*/
+
+header{
+
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+
+}
+
+.div-header{
+
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+	
+}
+
+.header-equipo{
+	
+	color: white;
+	
+	width: 100%;
+	height: 7vw;
+	
+	padding:0;
+	margin: 0;
+	overflow: hidden;
+	
+	background-color: rgb(47, 46, 48);
+
+}
+
+.header-equipo h1{
+
+	font-size: 3vw;
+	text-align: center;
+	margin: 0;
+	padding: 1%;
+}
+
+
+
+/*------- HEADER - NAVBAR -------*/
+
+.ul-navbar{
+
+	
+	margin: 0;
+	padding: 0% 0% 0% 39%;	
+	list-style-type: none;
+	overflow: hidden;
+
+}
+
+.ul-navbar li{
+
+	float: left;
+	margin: 0;
+	padding: 0;
+
+}
+
+.ul-navbar li a{
+	font-size: 1.2vw;
+
+	display: block;
+
+	color: whitesmoke;
+
+	padding: 8px 5px;
+	
+	text-align: center;
+	
+	text-decoration: none;
+  	
+}
+
+.ul-navbar li a:hover{
+
+	background-color: rgb(28, 27, 29);
+}
+
+/*------- MAIN -------*/
+
+main{
+	height: auto;
+	width: 100%;
+	
+}
+
+.div-content{
+
+	background-color: #f7f7f7;
+
+	margin: 0% 0% 0% 15%;
+	padding: 1vw 2vw 1vw 2vw;
+	
+	width: 70%;
+	height: 100%;
+	
+}
+
+h2{
+    color: rgb(25, 9, 82);
+    font-size: 2.5vw;
+}
+
+/*------- FOOTER -------*/
+
+footer{
+	
+	margin: 0;
+	list-style-type: none;
+	clear: left;
+	width: 100%;
+	height: 5%;
+
+	
+
+	background-color: rgb(47, 46, 48);
+
+}
+
+
+.contact{
+
+	width: auto;
+	display: flex;        
+    justify-content: center;
+	color: whitesmoke;
+	padding-top: 1vh;
+	
+}
+
+.contact li{
+
+	display: inline-block;
+	font-size: 1.2vw;
+	padding: 1vh;
+	
+}
+
+
+.contact-text{
+
+	text-indent: 0;
+	margin: 1vh 2vw 1vh 2vw;
+}
+
+
+/*------- ALL ANCHOR -------*/
+
+a{
+	text-decoration: none;
+}
+
+
+
+.return-home{
+
+	color: whitesmoke;
+}
+
+/*------------TABLES------------*/
+
+.normal-table,.normal-table th, .normal-table td {
+	border: 2px solid rgb(47, 46, 48);
+	border-collapse: collapse;
+  }
+
+.normal-table th, .normal-table td{
+	vertical-align: middle;
+	text-align: center;
+	height: 30px;
+}
+
+.normal-table{
+	margin: 2% 0% 2% 20%;
+	width: 60%;
+}
+
+.normal-table th{
+	color: whitesmoke;
+	background-color: rgb(47, 46, 48);
+}
+
+/*-------------FORMS-------------*/
+
+
+input{
+
+	margin: 1% 0%;
+	border: none;
+  	border-bottom: 2px solid grey;
+}
+
+#div-form{
+
+	margin: 2% 0%;
+	
+}
+
+input[type=submit], input[type=reset] {
+	background-color: rgb(47, 46, 48);
+	border: none;
+	border-radius: 5%;
+	color: white;
+	padding: 8px 12px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 10%;
+  }
+
+  input[type=color],select{
+	 margin: 0% 2%;
+  }
+
+  textarea {
+	width: 50%;
+	height: 150px;
+	padding: 12px 10px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	margin: 2% 0%;
+  }
+
+  select {
+	width: 10%;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+  }

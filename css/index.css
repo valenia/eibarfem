@@ -1,0 +1,98 @@
+
+/*------- MAIN -------*/
+
+.escudo-aside img{
+
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+  	width: 60%;
+
+}
+
+#index-article{
+
+    justify-content: center;
+}
+
+
+
+#menu-index{
+
+	margin: 2vw;
+	padding: 2vh 14vw 2vh 14vw; 
+	width: auto;
+	
+}
+
+#menu-index li{
+	
+	display: inline-block;
+	padding: 0;
+	margin: 0 2vw;
+	
+}
+
+
+#menu-index a{
+	
+	color: rgb(45, 14, 156);
+	font-size: 1.5em;
+	font-weight: bold;
+	
+}
+
+
+.div-content-index{
+
+	background-color: #f5f5e8;
+	margin: 0vw 0vw 0vw 12vw;
+	width: 55%;
+	height: 85vh;
+	
+	float: left;
+}
+
+article{
+
+	height: 100%;
+}
+
+/*------- ASIDE -------*/
+
+
+aside{
+
+	background-color: #f5f5e8;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	height: 85vh;
+    float: left;
+    overflow: auto;
+
+}
+
+
+.last-news{
+
+	padding: 0% 5%;
+}
+
+/* mouse over link */
+.last-news a:hover {
+	color: #91c1d7;
+  }
+
+.news{
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.news img{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+

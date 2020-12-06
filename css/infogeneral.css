@@ -1,0 +1,58 @@
+/*----Imagenes---*/
+
+.img-info{
+    max-width: 100%;
+    height: auto;
+    padding:0;
+
+}
+
+#antecedentes{
+
+    display: table;
+}
+
+.historia{
+
+    margin: 2% 0%;
+}
+
+.text{
+    
+    width: 44%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-right: 2%;
+    float: left;
+    
+}
+
+.imagen{
+    
+    width: 44%;
+    float: left;
+}
+
+
+
+p{
+    margin: 1vh 0vw 1vh 0vw;
+    text-indent: 3vw;
+    
+}
+
+#palmares{
+    clear: both;
+    margin-top: 3vw;
+}
+
+#ul-palmares{
+    list-style-type: circle;
+    margin: 1vh 0vw 1vh 4vw;
+}
+
+#ul-palmares li{
+
+    margin: 0.5vh 0vw 0.5vh 0vw;
+
+}
